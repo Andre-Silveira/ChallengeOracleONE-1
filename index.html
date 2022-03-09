@@ -9,12 +9,12 @@
 </head>
 <body>
    <div>
-
        <h1 class="titulo">Secret Box</h1>
     </div>
     <div class="box">
         <div class="ibox">   
             <p style="font-size: 13pt;" >Digite abaixo a mensagem que deseja criptografar: </p>
+            <p style="margin:0%;" >Obs: Apenas letras minúsculas e sem acentuação. </p>
             <div style="display: flex; flex-direction: row;">
                 <textarea  rows="10" cols="30" maxlength="500" id="criptografar" ></textarea>
                 
@@ -24,7 +24,7 @@
                   </button>
             </div>
             <p style="font-size: 13pt;" >Digite abaixo a mensagem que deseja descriptografar: </p>
-            <div  style="display: flex; flex-direction: row;">
+            <div  style="display: flex; flex-direction: row; margin-bottom: 3%;">
                 <textarea  rows="10" cols="30" maxlength="500" id="descriptografar" ></textarea>
                 <button class="button" onclick="descriptografar()" id="transformButton">
                     <img id="imgTransfomar" src="cadeadoAberto.png" alt="transformar">
