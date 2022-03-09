@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docodificador AIS</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body style="position: fixed; right: 30%;">
+   
+    <h1 class="titulo">Secret Box</h1>
+    <div class="box">
+        <div class="ibox">   
+            <p style="font-size: 13pt;" >Digite abaixo a mensagem que deseja criptografar: </p>
+            <div style="display: flex; flex-direction: row;">
+                <textarea  rows="10" cols="30" maxlength="500" id="criptografar" ></textarea>
+                
+                <button class="button" onclick="criptografar()" id="transformButton">
+                    <img id="imgTransfomar" src="cadeadoFechado.png" alt="transformar">
+                    CRIPTOGRAFAR
+                  </button>
+            </div>
+            <p style="font-size: 13pt;" >Digite abaixo a mensagem que deseja descriptografar: </p>
+            <div  style="display: flex; flex-direction: row;">
+                <textarea  rows="10" cols="30" maxlength="500" id="descriptografar" ></textarea>
+                <button class="button" onclick="descriptografar()" id="transformButton">
+                    <img id="imgTransfomar" src="cadeadoAberto.png" alt="transformar">
+                    DESCRIPTOGRAFAR
+                  </button>
+            </div>
+           
+        </div>
+        <div style="display:flex; justify-content: center; flex-direction: column;">
+            <button class="button1" onclick="copy('#mensagem')" id="transformButton">
+                <img id="imgTransfomar" src="copiar.png" alt="transformar">
+                Copiar</br>Mensagem</button>
+            <button class="button1" onclick="limpar()" id="transformButton">
+                <img id="imgTransfomar" src="limpar.png" alt="transformar">
+                Limpar </br>campos</button>
+        </div>
+        <div class="resposta">
+            <label id="labelMSG" style="font-size: 15pt; margin-bottom: 4px;">Mensagem</label>   
+            <div>
+                <textarea  rows="15" cols="30" maxlength="500" id="mensagem"></textarea>
+            </div>
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+<footer>
+    Desenvolvido por: André Silveira
+</footer>
+</html>
